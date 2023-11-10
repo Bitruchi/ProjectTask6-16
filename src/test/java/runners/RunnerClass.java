@@ -8,7 +8,7 @@ import org.junit.runner.RunWith;
 @CucumberOptions(
 
         features = "src/test/resources/features/",
-        glue = "steps",
+        glue = "src/test/java/steps/",
         dryRun = true,
         tags = "@fail",
         plugin={"pretty","rerun:target/failed.txt"}
